@@ -1,0 +1,113 @@
+<ion-content>
+  <div class="flex-center">
+    <ion-grid>
+      <ion-card-header >
+        <a routerLink="/login">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon">
+        </a>
+        <h2 class="header3">Hello! Register to get started</h2>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <form [formGroup]="regForm" novalidate>
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="number"
+                class="custom-input-field"
+                placeholder="Enter your Mobile Number"
+                formControlName="mobNum"
+                required
+              />
+            </ion-col>
+          </div>
+          <div *ngIf="!regForm.controls['mobNum'].valid" >
+            <div *ngIf="(regForm.controls['mobNum'].hasError('pattern')||regForm.controls['mobNum'].touched) && isSubmitted" class="text-danger">
+              Enter valid Mobile number
+            </div>  
+          </div>
+
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Name"
+                formControlName="name"
+                required
+              />
+            </ion-col>
+          </div>
+          <div *ngIf="!regForm.controls['name'].valid" >
+            <div *ngIf="(regForm.controls['name'].hasError('pattern')||regForm.controls['name'].touched) && isSubmitted" class="text-danger">
+              Enter valid Name
+            </div>  
+          </div>
+
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Email"
+                formControlName="email"
+                required
+              />
+            </ion-col>
+          </div>
+          <div *ngIf="!regForm.controls['email'].valid" >
+            <div *ngIf="(regForm.controls['email'].hasError('pattern')||regForm.controls['email'].touched) && isSubmitted" class="text-danger">
+              Enter valid Email
+            </div>  
+          </div>
+
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Password"
+                formControlName="psd"
+                required
+              />
+            </ion-col>
+          </div>
+          <div *ngIf="!regForm.controls['psd'].valid" >
+            <div *ngIf="(regForm.controls['psd'].hasError('pattern')||regForm.controls['psd'].touched) && isSubmitted" class="text-danger">
+              Password must contain one digit [0-9],one lowercase character [a-z],
+              uppercase character [A-Z],special character
+            </div>  
+          </div>
+
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Confirm password"
+                formControlName="confpsd"
+                required
+              />
+            </ion-col>
+          </div>
+          
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Referral Code (optional)"
+                formControlName="refcode"
+              />
+            </ion-col>
+          </div>
+      
+          <div class="btn-space">
+            <ion-button class="small-btn" routerLink="/login" (click)="register()" >Register</ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    
+    </ion-grid>
+  </div>
+</ion-content>

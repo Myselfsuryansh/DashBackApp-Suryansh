@@ -1,0 +1,91 @@
+<ion-content>  
+  <div class="flex" >
+
+    <ion-card-header >
+      <ion-row class="row">
+        <a routerLink="/start-plan">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+        </a>
+        <div class="header4">
+          <h2 class="head">Search New Plan</h2>
+        </div>
+      </ion-row>
+    </ion-card-header>
+
+    <div class="body">
+      <div *ngIf="Deposit" class="plan2">
+        <ion-row>
+          <div class="row">
+            <ion-card>
+              <div class="titlediv">
+                <h6 class="title">Time Plan</h6>
+              </div>
+              <div class="arrow">
+                <button  (click)="timePlanClick()" block class="iconbtn">
+                  <img src="assets/icon/home/profile/arrow.svg" class="arrow1">
+                </button>
+              </div>
+            </ion-card>
+          </div>
+
+          <div class="row">
+            <ion-card>
+              <div class="titlediv">
+                <h6 class="title">Flexi Term Plan</h6>
+              </div>
+              <div class="arrow">
+                <a routerLink="/sequirityprivacy">
+                  <img src="assets/icon/home/profile/arrow.svg" class="arrow1">
+                </a>
+            </div>
+            </ion-card>
+          </div>
+        </ion-row>
+      </div>
+    
+      <div *ngIf="pa" class="plan2">
+        <ion-row>
+          <div class="row">
+            <ion-card>
+              <div class="popular">
+                <ion-row>
+                  <img src="assets/icon/home/star.svg" class="starIcon">
+                  <h6 class="popularTitle">&nbsp; Popular</h6>
+                </ion-row>
+              </div>
+
+              <div class="pabody">
+                <h6 class="title2">1 Year</h6>
+                <ion-row>
+                  <h6 class="titlePa">&nbsp;24% pa</h6>
+                  <div class="arrowPa">
+                    <a routerLink="/add-plan">
+                      <img src="assets/icon/home/profile/arrow.svg" class="arrow2">
+                    </a>
+                  </div>
+                </ion-row>
+              </div>
+            </ion-card>
+          </div>
+
+          <div class="row">
+            <ion-card>              
+              <div class="pabodyMonth">
+                <h6 class="title2">6 Months</h6>
+                <ion-row>
+                    <h6 class="titlePa">&nbsp;18% pa</h6>
+                      <div class="arrowPa">
+                        <a routerLink="/add-plan">
+                          <img src="assets/icon/home/profile/arrow.svg" class="arrow2">
+                        </a>
+                      </div>
+                </ion-row>
+              </div>
+            </ion-card>
+          </div>
+        </ion-row>
+      </div>
+      
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,78 @@
+<ion-content>
+  <div class="flex">
+
+    <ion-card-header>
+      <ion-row class="row">
+        <a routerLink="/gas-bill2">
+          <img src="assets/icon/home/back_arrow.svg" alt="back_icon6" class="back_icon6"/>
+        </a>
+        <h2 class="Transfer ">{{title}}</h2>
+      </ion-row>
+    </ion-card-header>
+
+    <div class="body">
+      <div class="info">
+        <ion-row class="row"> 
+          <ion-col size="4"> 
+            <div class="logo">    
+              <img src="{{url}}" alt="icon2" class="DB_LOGO img{{id}}" />
+            </div>
+         </ion-col>
+         <ion-col size="8">
+            <h6 class="Title1">{{CustmerName}}</h6> 
+            <h6 class="title">{{account}}</h6> 
+         </ion-col>      
+        </ion-row>
+      </div>
+    
+      <div class="line2">
+        <h6 class="Title1">Bill Details</h6>
+      </div>
+
+      <div class="line2">
+        <ion-row class="row">
+          <ion-col size="7">  
+            <div class="custName">
+              <span class="title">Custmer Name:</span>
+            </div>
+            <div>
+              <span class="title ">Monthly Amount:</span>
+            </div>
+          </ion-col>
+      
+          <ion-col size="5"> 
+            <div class="custName">
+              <span class="name">{{CustmerName}}</span>
+            </div>
+            <div class="money">
+              <span class="money">{{Money}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    
+      <form [formGroup]="amountForm" novalidate>
+        <div class="line">
+          <ion-col size="12">
+             <input type="text" id="w3review"  formControlName="amount" placeholder="Enter Amount" class="custom-input-field2" name="w3review" />
+          </ion-col>   
+        </div> 
+      </form>
+      
+      <div class="line2">
+        <h6 class="title">Recommended</h6>
+        <ion-row class="row">
+          <ion-button (click)="addAmount(+500)" class="btn">+500</ion-button>
+          <ion-button (click)="addAmount(+700)" class="btn">+700</ion-button>
+          <ion-button (click)="addAmount(+900)" class="btn">+900</ion-button>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="confirm">
+      <ion-button class="long-btn" routerLink="/gas-bill" (click)="pay()">Proceed to Pay</ion-button>
+    </div>
+
+  </div>
+</ion-content>
+      

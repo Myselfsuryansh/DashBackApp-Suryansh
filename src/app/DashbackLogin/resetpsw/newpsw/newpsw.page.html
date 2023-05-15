@@ -1,0 +1,58 @@
+
+<ion-content>
+  <div class="flex-center">
+    <ion-grid>
+      <ion-card-header >
+        <a routerLink="/email-mobile-otp">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon">
+        </a>
+        <h2 class="header3">Create new Password</h2>
+        <p class="msg">Your new password must be unique from those previously use</p>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="resetpswForm" novalidate>
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="New Password"
+                formControlName="newpsw"
+                required
+              />
+            </ion-col>
+          </div>
+          <div *ngIf="!resetpswForm.controls['newpsw'].valid">
+            <!-- <div *ngIf="!resetpswForm.controls['newpsw'].valid && !resetpswForm.controls['newpsw'].touched || isSubmitted">
+              password is required</div>  -->
+              <div *ngIf="(resetpswForm.controls['newpsw'].hasError('pattern') || resetpswForm.controls['newpsw'].touched) && isSubmitted" class="text-danger">
+                Password must contain one digit [0-9],one lowercase character [a-z],
+                uppercase character [A-Z],special character
+              </div>            
+          </div> 
+
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Confirm Password"
+                formControlName="conpsw"
+                required
+              />
+            </ion-col>
+          </div>
+        </form>
+
+      <div class="login">
+        <ion-col size="12">
+          <ion-button class="long-btn"  (click)="sendOtp()">Reset Password</ion-button>
+        </ion-col>
+      </div>
+
+      </ion-card-content>
+    </ion-grid>
+  </div>
+</ion-content>
+

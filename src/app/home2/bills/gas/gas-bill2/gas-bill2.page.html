@@ -1,0 +1,45 @@
+
+<ion-content>
+  <div class="flex">
+    <ion-card-header>
+      <ion-row class="row">
+        <a routerLink="/gas-bill">
+          <img src="assets/icon/home/back_arrow.svg" alt="back_icon2" class="back_icon6" />
+        </a>
+        <span class="Transfer">{{this.title}}</span>
+      </ion-row>
+    </ion-card-header>
+      <div class="body">
+        <div class="input">
+        <ion-item>
+          <ion-input label="Solid input" class="SubscriberId" labelPlacement="stacked" type="input"
+           placeholder="Custmer ID" fill="solid">
+          </ion-input>
+          
+        </ion-item>
+        <h6 class="inputContent">Please enter 10 Digit valid Custmer ID
+          </h6> 
+        </div>
+        <div class="info">
+          <ion-row class="row"> 
+            <ion-col size="2"> 
+              <div class="logo">    
+                <img src="assets/icon/home/DB_LOGO 1.svg" alt="icon2" class="DB_LOGO" />
+              </div>
+           </ion-col>
+            <ion-col size="10">
+              <h6 class="content">Paying this bill allow Dashback to fetch your current and future 
+              bills so that you can view and
+              pay them.
+              </h6> 
+            </ion-col>      
+          </ion-row>
+        </div>
+      
+      <div class="confirm">
+      <ion-button class="long-btn" (click)="Confirm()">Confirm</ion-button>
+    </div>
+    </div>
+  </div>
+</ion-content>
+      

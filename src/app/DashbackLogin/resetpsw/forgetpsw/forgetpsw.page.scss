@@ -1,0 +1,118 @@
+ion-item{
+    margin-top:20px;
+    background-color: #E8ECF4;
+}
+.or{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.left{
+    text-align: left;
+    margin-bottom: 20px;
+}
+on-input{
+box-sizing: border-box;
+width: 331px;
+height: 56px;
+left: 49px;
+top: 355px;
+background-color: #F7F8F9;
+/* Border */
+border: 1px solid #E8ECF4;
+border-radius: 8px;
+}
+.icon{
+    width: 40px;
+    height:auto;
+    background-color: #FAFAFA;
+    display:inline-block;
+    text-align: center;
+}
+ion-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.iconlist{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+}
+  .icon{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.left{
+  float: right;
+  margin-top: 20px;
+}
+.footer{
+    justify-content: center;
+    display: flex;  
+}
+.send-btn{
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 20px;
+    --background: #09376E !important;
+    justify-content: center;
+    align-items: center;    
+    --border-radius: 8px;
+    text-transform: initial;
+}
+.send{
+    text-align: center;
+}
+.fph{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 130%;
+    letter-spacing: -0.01em;    
+    color: #161616;
+}
+.text-danger{
+    color: red;
+    font-size: 5vw;
+    padding-left:5vw
+}
+.back_icon{
+    width:auto;
+    height: auto;
+    padding-bottom: 5%;
+}
+input:focus{
+    outline:2px solid #35C2C1; ;     /* oranges! yey */
+}
+.footer{
+    margin-top: 100%;
+    display:block;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: "Montserrat", sans-serif;
+}          
+.row{
+    justify-content: center;
+}
+.regLink{
+font-size: 17px;
+letter-spacing: 0.01em;
+color: #2775B3;
+font-weight: 500;
+}
+.back_icon{
+    width: 10vw;
+}
+.login{
+    text-align: center;
+    padding-top: 8vw;
+}

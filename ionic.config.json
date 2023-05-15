@@ -1,0 +1,7 @@
+{
+  "name": "dashback",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,36 @@
+<ion-content class="slider">
+  <div class="flex-center center">  
+    <ion-grid >
+      <div class="left">
+        <p class="skip" fill="clear" routerLink="/mobile-login">Skip></p>
+      </div>
+
+      <ion-slides pager="true" [options]="slideOptsOne" #slideWithNav (ionSlideDidChange)="SlideDidChange(sliderOne,slideWithNav)">
+        <ion-slide *ngFor="let s of sliderOne.imageUrl">
+          <ion-grid >            
+            <ion-col size="12"> 
+                <b><h2 class="header">{{s.header}}</h2></b>
+            </ion-col>                                       
+            <ion-col size="6"> 
+              <img src="{{s.image}}" class="slider-img">
+            </ion-col>
+          </ion-grid>
+          <br>
+          <br>
+          <br>          
+        </ion-slide>
+      </ion-slides>
+      </ion-grid>
+
+      <div class="center">
+        <div class="msg">
+            <p >Cash back refers to a credit card benefit that refunds the cardholder's account a 
+              small percentage of the sum spent on purchases"
+            </p>
+        </div>
+        <div class="btn-space">
+          <ion-button class="small-btn"  routerLink="/mobile-login">Next</ion-button>
+        </div>
+      </div> 
+  </div>
+</ion-content>

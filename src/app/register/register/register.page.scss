@@ -1,0 +1,93 @@
+
+.or{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.left{
+    text-align: left;
+    margin-bottom: 20px;
+}
+on-input{
+    box-sizing: border-box;
+    width: 331px;
+    height: 56px;
+    left: 49px;
+    top: 355px;
+    background-color: #F7F8F9;
+    /* Border */
+    border: 1px solid #E8ECF4;
+    border-radius: 8px;
+}
+.regheader{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    padding-bottom: 0%;
+    letter-spacing: -0.01em;
+    color: #161616;
+}
+.icon{
+    width: 40px;
+    height:auto;
+    background-color: #FAFAFA;
+    display:inline-block;
+    text-align: center;
+}
+ion-footer{
+    text-align: center;
+}
+.iconlist{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+  }
+  .icon{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+.left{
+    float: right;
+    margin-top: 20px;
+}
+.input{
+    padding-bottom:5%;
+}
+.row{
+    justify-content: center;
+}
+.regLink{
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    color: #2775B3;
+    font-weight: 500;
+    }
+.msg{
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.01em
+}
+.footer{
+    padding-top: 50%;
+    display:block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+  .btn-space2{
+    text-align: center;
+    padding-top: 1vh;
+}
+.text-danger{
+    color: red;
+    font-size: 5vw;
+    padding-left:5vw
+}

@@ -1,0 +1,96 @@
+.flex-center{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.header{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center; 
+    overflow-y: auto ;
+    color:black;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+     font-size: 4vw;
+     font-weight: bold;
+     justify-content: center;
+  }
+  .image{
+    margin-top: 2vh;
+  }
+  .prev-icon-custom.disabled{
+    opacity: 0.4;
+    cursor: default;
+  }
+  .next-icon-custom.disabled{
+    opacity: 0.4;
+    cursor: default;
+  }
+  .slider-nav{
+    ion-icon{
+        height: 100%;
+    }
+  }
+  .login-btn{
+    width: 35vw;
+    height: 5vh;
+    --background: #09376E !important;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.09);
+    text-transform: initial;
+    --border-radius: 8px;
+    margin-top:2vh;
+  } 
+  .slide-text{
+    position: absolute;
+    color: white;
+  }
+.center{
+  display:block;
+}
+.flex-center{
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vh;
+}
+ion-grid{
+  display:block
+}
+on-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%;
+}
+.skip {
+  margin-top:2vh;
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+.left{
+  float: right;
+  }
+  ion-slide{
+    display:block;
+  }
+  .slide-text{
+    position: absolute;
+    color: black;
+    top: 0px;
+  }
+  ion-slides{
+    display:block;
+  }
+  .msg{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-size:3vw;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  .slider-img{
+    height:30vh;
+  }
+
+  

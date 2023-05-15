@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="flex">
+
+    <ion-card-header>
+      <ion-row class="row">
+        <a routerLink="/home">
+          <img src="assets/icon/home/back_arrow.svg" alt="back_icon2" class="back_icon6"/>
+        </a>
+        <span class="Transfer">Search DTH Provider</span>
+      </ion-row>
+    </ion-card-header>
+    
+    <div class="body">
+      <div class="input">     
+        <ion-col size="12">
+          <input
+            type="tel"
+            class="custom-input-field"
+            placeholder="Search by provider"
+            required
+          />
+        </ion-col>
+      </div>
+
+      <div *ngFor="let item of DTH">
+        <div class="dth" (click)="Next(item.url,item.title,item.class)">
+          <ion-row class="row">
+            <ion-col size="3">
+              <div class="img2">
+                  <img src="{{item.url}}" alt="back_icon2"  class="{{item.class}}img url img"/>
+              </div>
+            </ion-col>
+            <ion-col size="9">
+              <div class="{{item.class}}title">
+                <span class="Title {{item.class}}title">{{item.title}}</span>
+              </div>
+            </ion-col>
+          </ion-row>
+       </div>
+      </div>
+
+    </div>
+  </div>
+</ion-content>
+      

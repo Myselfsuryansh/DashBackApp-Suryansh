@@ -1,0 +1,36 @@
+<ion-content *ngIf="success">
+  <div class="flex-center center">
+    <div class="row">
+      <img src="assets/icon/common/Successmark.svg" class="logo">
+    </div>
+
+    <h2 class="header3">Password Changed!</h2>
+    <p class="msg2">Password Change Successfully </p>
+    
+    <div class="btn">
+      <ion-col size="11">          
+        <ion-button  class="long-btn" (click)="login()">Back to login</ion-button>
+      </ion-col>
+    </div>
+    
+  </div>
+</ion-content>
+
+
+<ion-content *ngIf="fail">
+  <div class="flex-center center">
+    <div class="row">
+      <img src="assets/icon/common/fail.svg" class="logo">
+    </div>
+
+    <h2 class="header4">OOPS! Unable to changed password</h2>
+    <p class="msg2">Look like passowrd selected by u is not unique,plase try again</p>
+    
+    <div class="btn">
+      <ion-col size="11">          
+        <ion-button  class="long-btn" (click)="login()">Done</ion-button>
+      </ion-col>
+    </div>
+  </div>
+</ion-content>
+  

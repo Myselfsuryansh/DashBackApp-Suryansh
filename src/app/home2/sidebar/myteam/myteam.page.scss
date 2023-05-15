@@ -1,0 +1,115 @@
+
+.flex{
+margin-top:2vh;
+margin-left: 5vw;
+margin-right: 5vw;
+margin-bottom: 5vw;
+} 
+ion-card-header{
+  margin-left:5vw;
+}
+.head2{
+  margin-bottom: 1vw !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vw;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #161616;
+  // margin-left: 4vw;
+  // text-align: center;
+}  
+ .photo{
+    width: 20vw;
+    float:right;  
+ }
+  .head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.5vw;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #161616;
+    margin-left: 4vw;
+    text-align: center;
+}  
+ion-searchbar{
+height: 14vw;
+}
+.playerinfo{
+    background:#F9C124;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    padding: 5vw;
+    border-radius: 5vw;
+    color:white;
+}
+.input{
+    margin-left: 5vw;
+    margin-right: 5vw; 
+}
+.teaminfo{
+    // background:#F9C124;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    // border-radius: 5vw;;
+}
+.team{
+    font-size:4vw;
+}
+ion-searchbar{
+    margin-bottom: 5vh;
+}
+.name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6.5vw;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: white;
+    padding-bottom: 10vw;
+    // margin-left: 4vw;
+    // text-align: center;
+}  
+
+select {
+    margin: 0;
+    font: inherit;
+    width: 100%;
+    background: #EEF4FF;
+    font-size:4vw;
+    border-radius:2vw;
+    padding-left: 3vw;
+    height: 14vw;
+    option{
+        width: 100%;
+    }
+}
+.tier {
+    margin: 0;
+    font: inherit;
+    // width: 100%;
+    background: #EEF4FF;
+    color:#161616;
+    font-size:4vw;
+    border-radius:2vw;
+    padding-left: 5vw;
+    height: 18vw;
+    // padding-top: 1vh;
+}
+.tierbtn{
+    float:left;
+    width:8vw;
+    margin-left:22vw;
+    margin-top: 1.5vh;
+}
+.btn{
+    // margin-top: 2vh;
+    // margin-left:50vw;
+    // width:8vw;
+    float:right;
+}

@@ -1,0 +1,111 @@
+.flex{
+    // margin-top:2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+   
+    } 
+    ion-card-header{
+      margin-left:3vw;
+    }
+    .head{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.5vw;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #161616;
+        margin-left: 4vw;
+        text-align: center;
+    }  
+    .titlePa{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6vw;
+        margin-top: -0.5vh;
+        color: #161616;
+        // margin-left: 1vw;;
+    }
+    .starIcon{
+        width: 5vw;
+    }
+       .custom-input-field{
+        background:#F7F8F9;
+        width:100 0%;
+        border: 1px solid #E8ECF4;
+        font-family: 'Montserrat', sans-serif;
+        border-radius:2vw;
+        color: #000;
+        font-size:4vw;
+        height: 14vw;
+        padding-left: 3vw;
+    }
+    .input{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-bottom: 5vw;
+    }
+       .titlediv{
+        // width:35vw;
+        text-align: center;
+       }
+       ion-card{
+        width:40vw;
+        height:30vw;
+        text-align: center;
+        justify-content: center;
+        padding-bottom:2vh;
+        // padding-top: 1vh;
+        border-radius: 4vw;;
+        margin: 1vw !important;
+        padding-left: 1vw;;
+        .popular{
+            padding-left: 20vw;
+           }
+           .popularTitle{
+            font-size: 3vw;;
+           }
+       }
+       .plan2{
+        text-align: center;
+       }
+       .plan{
+        text-align: center;
+        width:12vw;
+       }
+       .title{
+        font-size: 4vw;
+        color:black;
+        font-weight: 600;
+       }
+       .title2{
+        font-size: 3vw;
+        color:black;
+        font-weight: 600;
+        font-size: 3vw;
+        color: black;
+        font-weight: 600;
+        margin-left: -20vw;
+       }
+       .body{
+        text-align: center;
+        justify-content: center;
+        margin-top: 5vw;
+       }
+       .arrow1{
+        padding-top: 1vh;;
+        width:3vw;
+       }
+       .arrow2{
+        width:3vw;
+        float:right;
+       }
+       .arrowPa{
+        margin-left:5vw;
+       }
+       .pabody{
+        float:left;
+        // margin-top:-2vh;
+       }
+       .pabodyMonth{
+        padding-top: 4vh;;
+       }

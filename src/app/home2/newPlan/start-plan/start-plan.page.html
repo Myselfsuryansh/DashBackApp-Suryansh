@@ -1,0 +1,51 @@
+<!-- start plan -->
+<ion-content >  
+  <div class="flex" >
+
+    <ion-card-header >
+      <ion-row class="row">
+        <a routerLink="/profile">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+        </a>
+        <div class="header4">
+          <h2 class="head">Search New Plan</h2>
+        </div>
+      </ion-row>
+    </ion-card-header>
+
+    <div class="body">
+      <form [formGroup]="SearchForm" novalidate (ngSubmit)="search()">
+      <div class="input">
+        <ion-col size="12">
+          <input
+            type="tel"
+            class="custom-input-field"
+            placeholder="Search your plans"
+            formControlName="search"
+          />
+        </ion-col>
+      </div>
+      </form>
+
+      <div class="plan2">
+        <ion-row>
+          <div class="row" *ngFor="let item of Plan">
+            <ion-card >
+              <div class="src">
+                <a routerLink="/start-deposit">
+                  <img src="{{item.url}}" class="plan">
+                  </a>
+              </div>
+              <div class="titlediv">
+                <h6 class="title">{{item.title}}</h6>
+              </div>
+            </ion-card>
+          </div>
+        </ion-row>
+      </div>
+    </div>
+    
+  </div>
+</ion-content>
+
+

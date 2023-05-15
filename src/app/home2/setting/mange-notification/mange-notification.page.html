@@ -1,0 +1,28 @@
+<ion-content>  
+  <div class="flex" >
+
+    <ion-card-header >
+      <ion-row class="row">
+        <a routerLink="/profile">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+        </a>
+        <div class="header4">
+          <h2 class="head">Manage Notifications</h2>
+        </div>
+      </ion-row>
+    </ion-card-header>
+
+    <div class="body">   
+      <h2 class="subhead">Mute Notifications</h2>  
+      <div *ngFor="let item of Notification">
+        <ion-row class="row">      
+          <input type="checkbox" id="{{item.title}}" name="{{item.title}}" value="{{item.title}}" class="form-check-input" size="5vw">       
+          <div class="details1">
+            <h2 class="subhead">{{item.title}}</h2>
+          </div>
+        </ion-row>
+      </div>
+    </div>
+        
+  </div>
+</ion-content>

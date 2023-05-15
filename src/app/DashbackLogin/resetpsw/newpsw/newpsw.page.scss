@@ -1,0 +1,89 @@
+ion-item{
+    margin-top:20px;
+    background-color: #E8ECF4;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.left{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.login-btn{
+    width: 160px;
+    height: 46px;
+    left: 148px;
+    top: 568px;
+    margin-bottom: 20px;
+    --background: #09376E;
+    justify-content: center;
+    display: flex;
+    align-items: center;    
+    box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.09);
+}
+on-input{
+    box-sizing: border-box;
+    width: 331px;
+    height: 56px;
+    left: 49px;
+    top: 355px;
+    background-color: #F7F8F9;
+    /* Border */
+    border: 1px solid #E8ECF4;
+    border-radius: 8px;
+}
+.icon{
+    width: 40px;
+    height:auto;
+    background-color: #FAFAFA;
+    display:inline-block;
+    text-align: center;
+}
+ion-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.iconlist{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+  }
+.icon{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.left{
+    float: right;
+    margin-top: 20px;
+}
+.footer{
+    justify-content: center;
+    display: flex;  
+}
+  .header{
+    //font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    /* or 39px */    
+    letter-spacing: -0.01em;    
+    color: #161616;
+}
+.input{
+    padding-bottom:5%;
+}
+.login{
+    text-align: center;
+    padding-top: 5vw;
+}
+.text-danger{
+    color: red;
+    font-size: 5vw;
+    padding-left:5vw
+}

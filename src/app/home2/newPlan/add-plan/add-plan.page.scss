@@ -1,0 +1,132 @@
+.flex{
+    margin-top:2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    } 
+    ion-card-header{
+      margin-left:3vw;
+    }
+    .input{
+      margin-top: -1vh;
+    }
+    .line2{
+      margin-top:1vh
+    }
+    .head{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #161616;
+        margin-left: 4vw;
+        text-align: center;
+    }
+    .rate,.maturity{
+      margin-top: -1vh;
+    }
+       .custom-input-field2{
+        // background:#F7F8F9;
+        width: 100%;
+        border: 1px solid black;
+        font-family: 'Montserrat', sans-serif;
+        border-radius:3vw;
+        color: #000;
+        font-size:4vw;
+        height: 50px;
+        padding-left: 3vw;
+       }
+       .toggle{
+        margin-top: 2vh;
+        width: 1vw;
+       }
+       .btn{
+        --background: #EEF4FF;
+        color:#09376E;
+        width:24vw;
+        // padding: 5vw;
+        margin-left: 4vw;
+       }
+      .year, .subhead{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4vw;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #161616;
+        // margin-left: 4vw;
+        // text-align: center;
+    }  
+    ion-checkbox {
+        --size: 15px;
+        --checkbox-background-checked: #09376E;
+      }
+      
+      ion-checkbox::part(container) {
+        // border-radius: 6px;
+        border: 2px solid #09376E;
+      }
+      .inputTitle{
+        font-size: 4vw;
+        padding-left:5vw;
+        color:silver;
+      }
+      .amount{
+        padding-left:8vw;
+        color:#09376E;;
+      }
+    .row{
+        margin-top:0vh;
+       }
+       
+       .rate{
+        float:left
+       }
+      .payble{
+        text-align: center;
+      }
+      .line2{
+        margin-top:2vh;
+      }
+       .invest {
+        margin-top: 4vh;
+        justify-content: center;
+        text-align: center;
+        // margin-bottom: 1vh;
+        font: inherit;
+        // width: 100%;
+        background: #EEF4FF;
+        color:#09376E;
+        // font-size:4vw;
+        border-radius:5vw;
+        padding-left: 2vw;
+        height: 12vh;
+        // padding-top: 1vh;
+    }
+    .tbtn{
+       font-size:4vw;
+        color:black;
+        padding-left: 4vw;
+        font-weight: bold;
+        margin-top:-0.1vh
+    }
+    .rbtn{
+        font-size:3.5vw;
+        color:black;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        // font-weight: bold;
+    }
+    .left{
+        float:left;
+    }
+    .term{
+        margin-top:1vh;
+        margin-bottom: 2vh;;
+    }
+    .add{
+      font-size: 4vw;
+    }
+    ion-toggle {
+      zoom: 0.7;
+    }

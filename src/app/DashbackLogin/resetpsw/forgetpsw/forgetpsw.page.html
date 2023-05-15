@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+    <ion-grid>
+      <ion-card-header >
+        <a routerLink="/mobile-login">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon">
+        </a>
+        <h2 class="header3">Forgot Password?</h2>
+        <p class="msg"> Don't worry! Please enter the email address linked with your account</p>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <form [formGroup]="forgetpswForm" novalidate>
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="number"
+                class="custom-input-field"
+                placeholder="Enter your mobile number"
+                formControlName="mobile"
+                required
+              />
+            </ion-col>
+          </div>
+
+          <div *ngIf="!forgetpswForm.controls['mobile'].valid" >
+            <!-- <div *ngIf="forgetpswForm.controls['mobile'].touched || isSubmitted" class="text-danger">
+              Mobile Number is required
+            </div> -->
+            <div *ngIf="(forgetpswForm.controls['mobile'].hasError('pattern')||forgetpswForm.controls['mobile'].touched) && isSubmitted" class="text-danger">
+              Enter valid Mobile number</div>            
+          </div>   
+
+          <div class="login">
+            <ion-col size="12">
+              <ion-button class="long-btn"  (click)="sendOtp()">Send Code</ion-button>
+            </ion-col>
+          </div>
+          
+        </form> 
+      </ion-card-content>
+
+    </ion-grid>
+  </div>
+</ion-content>
+

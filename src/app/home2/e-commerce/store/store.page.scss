@@ -1,0 +1,85 @@
+.ecommerce,.fashion,.ele{
+    margin-right: 3vw;
+    margin-top: 5vw;
+    border: 1px solid #D4D4D4;
+    width: 16vw;
+    height: 15vw;
+    left: 2vw;
+    top: 2vw;
+    border-radius: 2vw;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3vw;
+    .img{
+      width: 13vw;
+    // height: 7vw;
+    }
+  }
+  .title{
+      font-size: 4vw;
+      text-align: center;
+      justify-content: center;
+  }  
+  .card{
+    text-align: center;
+    justify-content: center;
+  }   
+.flex{
+  padding-left: 10vw;
+ // padding-right: 5vw;
+}
+ion-card-header{
+  margin-left:5vw;
+}.DELL{
+  margin-top: -3vw;
+}
+.link{
+  float:right;
+}
+.head2{
+  margin-bottom: 1vw !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vw;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #161616;
+  // margin-left: 4vw;
+  // text-align: center;
+}  
+  .head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.5vw;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #161616;
+    margin-left: 4vw;
+    text-align: center;
+}  
+
+.Category{
+  margin-left:5vw;
+}
+.card2{
+  margin-right: 2vw;
+  margin-top: 5vw;
+  border: 1px solid #000;
+  width: 18vw;
+  height: 30vw;
+  left: 2vw;
+  top: 2vw;
+  border-radius: 2vw;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3vw;
+  .img{
+    width: 13vw;
+  // height: 7vw;
+  }
+}
+.titlecat{
+  font-size: 4vw;
+}

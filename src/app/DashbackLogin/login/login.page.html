@@ -1,0 +1,49 @@
+<ion-content >
+  <div class="flex-center">
+    <ion-grid>
+      <ion-card-header >
+        <a routerLink="/mobile-login">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon">
+        </a>
+        <img src="assets/icon/common/logo2.svg" class="logo center">
+      </ion-card-header>
+
+      <form [formGroup]="loginForm" novalidate>
+        <ion-card-content>
+          <div class="input">   
+            <ion-col size="12">
+              <input
+                type="tel"
+                class="custom-input-field"
+                placeholder="Enter your mobile number"
+                formControlName="mobile"
+                required
+              />
+            </ion-col>
+          </div>
+        
+          <div class="input">
+            <ion-col size="12">
+              <input
+                type="password"
+                class="custom-input-field"
+                placeholder="Enter your password"
+                formControlName="psd"
+                required
+              />
+            </ion-col>
+          </div>
+
+          <div class="left">
+            <p class="ForgetPswBtn regular"fill="clear" routerLink="/forgetpsw">Forgot Password?</p>
+          </div>
+        
+          <div class="center login">
+            <ion-button class="small-btn" (click)="home()" [disabled]="!loginForm.valid">Login</ion-button>
+          </div>   
+      
+        </ion-card-content>
+      </form>    
+    </ion-grid>
+  </div>
+</ion-content>

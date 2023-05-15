@@ -1,0 +1,62 @@
+<ion-content>  
+  <div class="flex" >
+
+  <ion-card-header >
+    <ion-row class="row">
+      <a routerLink="/home">
+        <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+      </a>
+      <div class="Utilities">
+        <h2 class="head">My Team</h2>
+      </div>
+    </ion-row>
+  </ion-card-header>
+
+  <!-- <ion-searchbar animated="true" placeholder="Enter Name" class="searchbar"></ion-searchbar> -->
+    <div class="input">
+      <ion-col size="10">
+        <input
+          type="password"
+          class="custom-input-field"
+          placeholder="Enter Name"
+        />
+      </ion-col>
+
+      <ion-col size="10">
+        <div class="tier">
+          <ion-row class="row">
+            <h2 class="name1">Tier</h2>
+            <div class="tierbtn">
+              <button  (click)="tierClick()" blockclass="btn" >
+              <img src="assets/icon/home/Down_arrow.svg" class="tierbtn">
+              </button>
+            </div>
+          </ion-row>
+        </div>
+        <!-- <select class="form-control">  
+            <option >Tier</option>   -->
+            <!-- <option>Choose Website</option>   -->
+            <!-- <option *ngFor="let web of websiteList">{{web}}</option>   -->
+        <!-- </select>   -->
+      </ion-col> 
+    </div>
+
+    <div>
+      <div class="teaminfo" *ngIf="tierhidden">
+        <p class="team">Team size:{{teamSize}}</p>
+        <p class="team">Total Cashback:{{cashback}}</p>
+        <p class="team">Total Utility Cashback:{{utilityCashback}}</p>
+        <p class="team">Total E-commerce Cashback:{{ecommerceCashback}}</p>
+      </div>
+
+      <div class="playerinfo">
+        <img src="assets/icon/category/popular.svg" class="photo">
+        <h2 class="name">{{name}}</h2>
+        <p class="team">Total Cashback:{{cashback}}</p>
+        <p class="team">Total Utility Cashback:{{utilityCashback}}</p>
+        <p class="team">Total E-commerce Cashback:{{ecommerceCashback}}</p>
+      </div>
+    </div>
+
+  </div>
+</ion-content> 

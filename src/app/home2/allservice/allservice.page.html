@@ -1,0 +1,222 @@
+<ion-content>
+  <ul>
+    <li><img src="assets/icon/common/logo2.svg" class="logoMenu"></li>
+    <li routerLinkActive="active">
+      <button (click)="rechargeClick()" block class="iconbtn">
+        <img src="assets/icon/home/AllService/1.svg" class="btn">
+      </button>
+    </li>
+    <li routerLinkActive="active">
+      <button (click)="utilityClick()" block class="iconbtn">
+        <img src="assets/icon/home/AllService/home.svg" class="btn">
+      </button>
+    </li>
+    <li>
+      <button (click)="fashionClick()" block class="iconbtn">
+        <img src="assets/icon/home/AllService/2.svg" class="btn">
+      </button>
+    </li>
+    <li>
+      <button (click)="electronicsClick()" block class="iconbtn">
+        <img src="assets/icon/home/AllService/battery.svg" class="btn">
+      </button>
+    </li>
+    <li>
+      <button (click)="ecommerceClick()" block class="iconbtn">
+        <img src="assets/icon/home/AllService/battery.svg" class="btn">
+      </button>
+    </li>
+  </ul>
+
+  <div style="margin-left:15%;padding:2px 16px;border-left: 1px;">
+    
+    <div class="flexMain">
+      <ion-card-header>
+        <ion-row class="row">
+          <a routerLink="/home">
+            <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+          </a>
+          <div class="Utilities">
+            <h3 class="head">ALL Services</h3>
+          </div>
+        </ion-row>
+      </ion-card-header>
+      <div class="input">
+        <ion-col size="8">
+          <input type="number" class="custom-input-field3" placeholder="Search Dashback" />
+        </ion-col>
+      </div>
+      <!-- <ion-searchbar animated="true" class="searchbar"></ion-searchbar> -->
+      <div>
+      </div>
+
+      <div class="flex">
+        <div *ngIf="recharge">
+          <h4 class="head2">Recharges & Bills</h4><br>
+          <table>
+            <tr>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login"><img src="assets/icon/home/recharge/mobile.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login">
+                    <img src="assets/icon/home/recharge/fastag.svg" class="img1">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/dth-provider">
+                    <img src="assets/icon/home/recharge/dth.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+            </tr>
+            <tr class="row">
+              <td>
+                <h6 class="icon-name2">Mobile <br>Recharge</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">FASTang<br> Recharge</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">DTH</h6>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div *ngIf="utility">
+          <h4 class="head2">Utilities</h4>
+          <br>
+          <table>
+            <tr>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login"><img src="assets/icon/home/recharge/cylinder.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login">
+                    <img src="assets/icon/utility/water.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login">
+                    <img src="assets/icon/home/recharge/ele.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+            </tr>
+            <tr class="row">
+              <td>
+                <h6 class="icon-name2">Book a <br>Cylinder</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Water</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Electricity</h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login"><img src="assets/icon/home/recharge/postpaid.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login">
+                    <img src="assets/icon/utility/broadband.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon2">
+                  <a routerLink="/mobile-login">
+                    <img src="assets/icon/utility/landline.svg" class="img">
+                  </a>
+                </div>
+                <br>
+              </td>
+            </tr>
+            <tr class="row">
+              <td>
+                <h6 class="icon-name2">PostPaid</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">BroadBand</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Landline</h6>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+
+        <div *ngIf="fashion">
+          <h4 class="head2">Fashion</h4>
+          <ion-row>
+            <div class="row" *ngFor="let item of Fashion">
+              <div class="card">
+                <div class="{{item.group}}">
+                  <a routerLink=""><img src="{{item.url}}" class="{{item.title}}"></a>
+                </div>
+                <h6 class="title">{{item.title}}</h6>
+              </div>
+            </div>
+          </ion-row>
+        </div>
+
+        <div *ngIf="electronics">
+          <h4 class="head2">Electronics</h4>
+          <ion-row>
+            <div class="row" *ngFor="let item of Electronics">
+              <div class="card">
+                <div class="{{item.group}}">
+                  <a routerLink=""><img src="{{item.url}}" class="{{item.title}} img"></a>
+                </div>
+                <h6 class="title">{{item.title}}</h6>
+              </div>
+            </div>
+          </ion-row>
+        </div>
+
+        <div *ngIf="ecommerce">
+          <h4 class="head2">E-Commerce</h4>
+          <ion-row>
+            <div class="row" *ngFor="let item of Ecommernce">
+              <div class="card">
+                <div class="{{item.group}}">
+                  <a routerLink=""><img src="{{item.url}}" class="{{item.title}} img"></a>
+                </div>
+                <h6 class="title">{{item.title}}</h6>
+              </div>
+            </div>
+          </ion-row>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</ion-content>

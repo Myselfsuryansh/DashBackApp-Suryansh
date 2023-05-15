@@ -1,0 +1,37 @@
+<ion-content >
+  <div class="flex-center">
+    <ion-grid>
+      <ion-card-header >
+        <img src="assets/icon/common/logo2.svg" class="logo center">
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="loginForm" novalidate>
+          <div class="input">       
+            <ion-col size="12">
+              <input
+                type="number"
+                class="custom-input-field"
+                placeholder="Enter your mobile number"
+                formControlName="mobile"
+                required
+              />
+            </ion-col> 
+
+            <div *ngIf="!loginForm.controls['mobile'].valid" >
+              <div *ngIf="(loginForm.controls['mobile'].hasError('pattern')||loginForm.controls['mobile'].touched) && isSubmitted" class="text-danger">
+                Enter valid Mobile number
+              </div>            
+            </div>             
+          </div>
+              
+          <div class="login">
+            <ion-button class="small-btn" (click)="login()">Next</ion-button>           
+          </div>  
+          
+        </form>
+      </ion-card-content>   
+    </ion-grid>
+  </div>
+</ion-content>
+  

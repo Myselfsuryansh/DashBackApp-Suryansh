@@ -1,0 +1,26 @@
+.Transfer {
+    margin-left: 30px !important;
+    margin-top: 3.9vh !important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px !important;
+    color: white;
+    text-align: center;
+    //   min-height: 100px;
+  }
+  img {
+    margin-top: 3vh !important;
+  }
+  ion-content {
+    --ion-background-color: #09376E;
+  }
+  .pay {
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+  }
+  .payinfo{
+      padding-top: 6vh;
+      margin-left: 6vw;
+  }

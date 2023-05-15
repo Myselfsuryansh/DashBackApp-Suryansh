@@ -1,0 +1,69 @@
+<ion-content>  
+  <div class="flexMain" >
+
+    <ion-card-header >
+      <ion-row class="row">
+        <a routerLink="/home">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+        </a>
+        <div class="Utilities">
+          <h2 class="head">Stores</h2>
+        </div>
+      </ion-row>
+    </ion-card-header>
+
+    <!-- <div class="Category">
+      <ion-row>
+        <h4 class="head2">Shop by Category</h4>
+      </ion-row>
+      <ion-row>
+        <div class="row" *ngFor="let item of Category">
+          <div class="card2">
+            <div class="{{item.group}}">
+              <a routerLink=""><img src="{{item.url}}" class="{{item.title}}"></a>
+            </div>
+          </div>
+        </div>
+      </ion-row>
+    </div> -->
+
+    <div class="flex" >
+      <h4 class="head2">Fashion</h4>
+      <ion-row>
+        <div class="row" *ngFor="let item of Fashion">
+          <div class="card">
+            <div class="{{item.group}}">
+              <a routerLink=""><img src="{{item.url}}" class="{{item.title}}"></a>
+            </div>
+            <h6 class="title">{{item.title}}</h6>
+          </div>
+        </div>
+      </ion-row>
+
+      <h4 class="head2">Electronics</h4>
+        <ion-row>
+          <div class="row" *ngFor="let item of Electronics">
+            <div class="card">
+              <div class="{{item.group}}">
+                <a routerLink=""><img src="{{item.url}}" class="{{item.title}} img"></a>
+              </div>
+              <h6 class="title">{{item.title}}</h6>
+            </div>
+          </div>
+        </ion-row>
+
+      <h4 class="head2">E-Commerce</h4>
+      <ion-row>
+        <div class="row" *ngFor="let item of Ecommernce">
+          <div class="card">
+            <div class="{{item.group}}">
+              <a routerLink=""><img src="{{item.url}}" class="{{item.title}} img"></a>
+            </div>
+            <h6 class="title">{{item.title}}</h6>
+          </div>
+        </div>
+      </ion-row>
+    </div>
+    
+  </div>
+</ion-content> 

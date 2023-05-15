@@ -1,0 +1,57 @@
+.flex{
+    margin-top:2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    } 
+    ion-card-header{
+      margin-left:3vw;
+    }
+    .head{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 6.5vw;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #161616;
+        margin-left: 4vw;
+        text-align: center;
+    }  
+    .subhead{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #161616;
+    }  
+     .arrow{
+        margin-right: 2vw;
+     }
+     .arrow1 {
+        margin-top: 6vh;
+        width: 4vw;
+       }
+       .details{
+        width:60vw;
+        margin-left: 3vw;
+       }
+       .icon1{
+        float:right;
+        padding-top: 10vw;
+        margin-left: 1vw;
+        padding-right: 2vw;
+        width: 12vw;;
+       }
+       .msg1{
+        margin-top:-1vw;
+        font-size:3.5vw;
+       }
+       .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+      }

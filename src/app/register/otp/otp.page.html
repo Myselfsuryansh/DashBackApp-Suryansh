@@ -1,0 +1,43 @@
+<ion-content >
+  <div class="flex-center2">
+    <ion-grid>
+      <ion-card-header >
+        <a routerLink="/forgetpsw">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon">
+        </a>
+        <h2 class="header3">OTP Verification</h2>
+        <p class="msg"> Verify 4 Digit OTP send to your mobile number</p>
+      </ion-card-header>
+     
+      <ion-card-content>
+        <form [formGroup]="otpForm" novalidate>
+          <ion-row text-center>
+            <ion-col size="12">
+             <ion-input #otp1 formControlName="otp1" (keyup)="gotoNextField(otp2)" required maxLength="1">
+             </ion-input>
+             <ion-input #otp2 formControlName="otp2" (keyup)="gotoNextField(otp3)"required maxLength="1" class="space">
+             </ion-input>
+             <ion-input #otp3 formControlName="otp3" (keyup)="gotoNextField(otp4)" required maxLength="1" class="space">
+             </ion-input>
+             <ion-input #otp4  formControlName="otp4" required maxLength="1" class="space">
+             </ion-input>
+            </ion-col>
+          </ion-row>
+        
+          <div class="btn-space2">   
+            <ion-col size="12">     
+              <ion-button class="long-btn" [disabled]="!otpForm.valid" (click)="newpsw()" >Verify</ion-button>
+            </ion-col>
+            <div class="timer">    
+              <p class="msg2">Didn't recevice OTP?</p>              
+              <p *ngIf="timer" class="time"><b>Request a Gain in {{ min }} : {{ sec }}</b></p>               
+            </div>
+           </div> 
+        </form>     
+       </ion-card-content>
+       
+    </ion-grid>
+  </div>
+</ion-content>
+  
+  

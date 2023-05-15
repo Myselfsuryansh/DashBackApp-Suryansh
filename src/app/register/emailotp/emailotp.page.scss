@@ -1,0 +1,118 @@
+.or{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+.resentotp{
+padding-left: 30%;;
+}
+.left{
+    text-align: left;
+    margin-bottom: 20px;
+}
+ion-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.iconlist{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+  }
+
+  .icon{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+.left{
+float: right;
+margin-top: 20px;
+}
+.footer{
+    justify-content: center;
+    display: flex;  
+}
+ion-input{
+    display:inline-block;
+    width:15vw;
+    height:15vw;
+    margin:1vw;  
+    font-size: 18px; 
+    --padding-start:7px;
+   border-radius:1 rem;
+    --background:#E8ECF4;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    }
+.send-btn{
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+    --background: #09376E !important;
+    justify-content: center;
+    align-items: center;    
+    --border-radius: 8px;
+    text-transform: initial;
+    font-family: "Montserrat", sans-serif;
+    }
+    .otp{
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        /* or 39px */    
+        letter-spacing: -0.01em;    
+        color: #161616;
+    }
+    .has-focus,.input:focus{
+        outline: 2px solid #35C2C1; 
+        background-color:white;    /* oranges! yey */
+      }     
+      .footer{
+        margin-top: 10vh;
+        // padding-top: 210px;
+        display:block;
+        text-align: center;
+        margin-bottom: 0px;
+        font-family: "Montserrat", sans-serif;
+    }    
+    
+    .row{
+        justify-content: center;
+    }
+    .regLink{
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    color: #2775B3;
+    font-weight: 500;
+    }
+    .timer{
+        display:block;
+        text-align: center;
+        justify-content: center;
+    }
+    .time{
+    color:#09376E;
+    font-weight: bold;
+    font-size: 4vw;
+    letter-spacing: 0.01em;
+    font-family: "Montserrat", sans-serif;
+    }
+    ion-row {
+        display:block;
+        text-align: center;
+        justify-content: center;
+    }
+    .btn-space2 {
+        text-align: center;
+        margin-top: 3vh;
+    }

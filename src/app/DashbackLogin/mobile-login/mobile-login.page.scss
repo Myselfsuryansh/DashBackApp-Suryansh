@@ -1,0 +1,111 @@
+.flex-center{
+    align-items: center;    
+    margin-top: 10vh;
+}
+.logo{
+    width: 118vw;
+    height: 10vh;
+}
+ion-item{
+    background-color: #E8ECF4;
+}
+.input{
+    padding-top:10%;
+}
+.or{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    margin-top: 37px;
+}
+.left{
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top:10%;
+}
+.text-danger{
+    color: red;
+    font-size: 5vw;
+    padding-left:5vw
+}
+.ForgetPswBtn {
+    font-weight: 500;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+.icon{
+    width: 40px;
+    height:auto;
+    background-color: #FAFAFA;
+    display:inline-block;
+    text-align: center;
+}
+ion-footer{
+    margin-top: 10px;
+    text-align: center;
+}
+.iconlist{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+  }
+.icon{
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+.left{
+float: right;
+}
+.footer{
+    margin-bottom: 0px;
+    margin-bottom: 0px;
+}
+.row{
+    justify-content: center;
+}
+.regLink{
+font-size: 17px;
+letter-spacing: 0.01em;
+color: #2775B3;
+font-weight: 500;
+}
+.msg{
+font-weight: 500;
+font-size: 17px;
+letter-spacing: 0.01em
+}
+.footer{
+    padding-top: 60%;
+    display:block;
+    margin-bottom:0px
+}
+.input-wrapper {
+    height: 56px !important;
+}
+.input-wrapper {
+    display: flex;
+    height: 56px;
+}
+input:focus{
+    outline:2px solid #35C2C1; ;     /* oranges! yey */
+  }
+.login{
+    text-align: center;
+    padding-top: 7vw;
+}
+.login-btn {
+    width: 35vw;
+    height: 5vh;
+    --background: #09376E !important;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.09);
+    text-transform: initial;
+    --border-radius: 8px;
+}

@@ -1,0 +1,510 @@
+
+<ion-content class="home-page">
+
+  <ion-card-header>
+    <div class="logo">
+      <ion-col size="12">
+        <ion-menu-toggle>
+          <img src="assets/icon/home/home/sidebar.svg" class="logo1" />
+        </ion-menu-toggle>
+        <img src="assets/icon/home/home/logo 1.svg" class="logo22" />
+        <img src="assets/icon/home/home/scanner.svg" class="logo3" />
+        <a routerLink="/notification">
+          <img src="assets/icon/home/home/Notification.svg" class="logo44" />
+        </a>
+      </ion-col>
+    </div>
+  </ion-card-header>
+
+  <div class="head" [hidden]="ishidden">
+    <ion-col size="11">
+      Welcome Back, {{name}}
+    </ion-col>
+  </div>
+
+  <div class="flex">
+    <ion-content [scrollEvents]="true" (ionScrollStart)="handleScrollStart()" (ionScroll)="handleScroll($any($event))"
+      (ionScrollEnd)="handleScrollEnd()" class="ion-padding">
+      <!-- <div class="hidebtn">
+       <ion-button class="hidden-btn" (click)="hide()"></ion-button>
+    </div> -->
+      <div style="overflow-x: auto;">
+        <table>
+          <tr class="row">
+            <td>
+              <div class="icon1">
+                <a routerLink="/myteam"><img src="assets/icon/home/home/addMoney.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/commingsoon">
+                  <img src="assets/icon/home/home/pay.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/premium">
+                  <img src="assets/icon/home/home/requestMoney.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/refer">
+                  <img src="assets/icon/home/home/refer.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">Add Money...</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Pay cards</h6>
+            </td>
+            <td>
+              <h6 class="icon-name ">Recieve <br>coins</h6>
+            </td>
+            <td>
+              <h6 class="icon-name ">Refer</h6>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4"> <img src="assets/icon/common/utilityImg.svg" class="imgrect"></td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="icon1">
+                <a routerLink="/start-plan"><img src="assets/icon/home/home/paymentHistory.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/home/wallet.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/allservice">
+                  <img src="assets/icon/home/home/prosperityPlan.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/profile">
+                  <img src="assets/icon/home/home/cashback.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">Payment History</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Wallet</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Prosperity Plans</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Cashback Calculator</h6>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="icon1">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/leaderboard.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon1">
+                <a routerLink="/allservice">
+                  <img src="assets/icon/home/home/AllService.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h6 class="icon-name">Leader Board</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">All service</h6>
+            </td>
+          </tr>
+          <tr class="row">
+            <td colspan="4">
+              <p class="head2">Recharges & Bills</p>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login"><img src="assets/icon/home/recharge/mobile.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/recharge/fastag.svg" class="img1">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/dth-provider">
+                  <img src="assets/icon/home/recharge/dth.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/recharge/cable.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">Mobile Recharge</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">FASTang Recharge</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">DTH</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Cable TV</h6>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="icon2">
+                <a routerLink="/gas-bill">
+                  <img src="assets/icon/home/recharge/gas.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/recharge/postpaid.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/recharge/ele.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="viewmore">
+                <a routerLink="/utilities">
+                  <img src="assets/icon/home/recharge/more.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">Gas Bill</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Postpaid</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Electricity</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">View More</h6>
+            </td>
+          </tr>
+          <tr class="row">
+            <td colspan="4">
+              <p class="head2">Trending</p>
+            </td>
+          </tr>
+        </table>
+        <div class="trend">
+          <table>
+            <tr class="row">
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend1">
+                    <img src="assets/icon/home/recharge/mobile.svg" class="trendimg1">
+                  </a>
+                </div>
+                <br>
+              </td>
+
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend2">
+                    <img src="assets/icon/home/recharge/cylinder.svg" class="trendimg2">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend3">
+                    <img src="assets/icon/home/recharge/ele.svg" class="trendimg3">
+                  </a>
+                </div>
+                <br>
+              </td>
+
+            </tr>
+            <tr class="row">
+              <td>
+                <h6 class="icon-name2">Mobile Recharge</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Book a Cylender</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Electricity</h6>
+              </td>
+            </tr>
+            <tr class="row">
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend4">
+                    <img src="assets/icon/home/busTicket.svg" class="trendimg4">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend5">
+                    <img src="assets/icon/home/recharge/loan.svg" class="trendimg5">
+                  </a>
+                </div>
+                <br>
+              </td>
+              <td>
+                <div class="icon4">
+                  <a routerLink="/mobile-login" class="icontrend6">
+                    <img src="assets/icon/home/recharge/fastag.svg" class="trendimg6">
+                  </a>
+                </div>
+                <br>
+                <br>
+              </td>
+            </tr>
+            <tr class="row">
+              <td>
+                <h6 class="icon-name2">Bus Ticket</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">Loan EMI</h6>
+              </td>
+              <td>
+                <h6 class="icon-name2">FASTang Recharge</h6>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <table class="store" style="overflow-x: auto;">
+          <tr class="row">
+            <td colspan="4">
+              <p class="head2">Our Stores</p>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="icon3">
+                <a routerLink="/redirect"><img src="assets/icon/home/levis.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon3">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/myntra.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon3">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/jbl.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon3">
+                <a routerLink="/store">
+                  <img src="assets/icon/home/reebok.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">Levi's</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Myntra</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">JBL</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Reebok</h6>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login"><img src="assets/icon/home/ajio.svg" class="img1">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/flipkart.svg" class="img1">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="icon2">
+                <a routerLink="/mobile-login">
+                  <img src="assets/icon/home/amazon.svg" class="img1">
+                </a>
+              </div>
+              <br>
+            </td>
+            <td>
+              <div class="viewmore">
+                <a routerLink="/store">
+                  <img src="assets/icon/home/recharge/more.svg" class="img">
+                </a>
+              </div>
+              <br>
+            </td>
+          </tr>
+          <tr class="row">
+            <td>
+              <h6 class="icon-name">AJIO</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Flipkart</h6>
+            </td>
+            <td>
+              <h6 class="icon-name">Amazon</h6>
+            </td>
+            <td> 
+                <h6 class="icon-name">View More</h6>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ion-content>
+  </div>
+</ion-content>
+
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding">
+    <img src="assets/icon/home/sidebar/DB_LOGO 3.svg" class="logoMenu center">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5">
+          <img src="assets/icon/home/sidebar/photo.svg" class="photo">
+        </ion-col>
+        <ion-col size="5">
+          <h6 class="name">Raj</h6>
+        </ion-col>
+        <ion-col size="2">
+          <div class="arrow">
+            <a routerLink="/home">
+              <img src="assets/icon/home/profile/arrow.svg" class="arrow1">
+            </a>
+          </div>
+        </ion-col>
+      </ion-row>
+      <hr />
+
+      <ion-row><ion-col size="2"> <img src="assets/icon/home/sidebar/premium.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">Become Premium Member</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/team.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">My Team</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/setting.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">Profile Setting</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/kyc.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">KYC</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/appLock.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">App Lock</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/policy.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">Privacy Policy</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/psetting.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">Payment Setting</h6>
+        </ion-col></ion-row>
+      <ion-row><ion-col size="2"><img src="assets/icon/home/sidebar/psetting.svg" class="i"></ion-col>
+        <ion-col>
+          <h6 class="menuhead">Help & Support</h6>
+        </ion-col></ion-row>
+
+    </ion-grid>
+    <ion-row>
+      <ion-button fill="clear" class="center logout" (click)="logout()">Logout &nbsp;
+        <img src="assets/icon/home/sidebar/logout.svg" class="logoutIcon">
+      </ion-button>
+    </ion-row>
+  </ion-content>
+</ion-menu>

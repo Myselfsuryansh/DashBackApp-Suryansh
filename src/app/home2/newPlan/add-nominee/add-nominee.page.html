@@ -1,0 +1,78 @@
+
+<ion-content>
+  <div class="flex" >
+
+    <ion-card-header >
+      <ion-row class="row">
+        <a routerLink="/start-deposit">
+          <img src="assets/icon/home/back_arrow.svg" class="back_icon2">
+        </a>
+        <div class="header4">
+           <h2 class="head">Add Nominee Details</h2>
+        </div>
+      </ion-row>
+    </ion-card-header>
+
+    <div class="body">
+      <form [formGroup]="nomineeForm" novalidate (ngSubmit)="addNominee()">
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">Nominee Name</ion-label>
+          <ion-input placeholder="Nominee Name"  formControlName="nName" required></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">Relationship</ion-label>
+          <ion-input placeholder="Relationship" formControlName="relationship"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">Date of Birth</ion-label>
+          <ion-input placeholder="Date of Birth" formControlName="DOB"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">Select Name:</ion-label>
+          <ion-input placeholder="Select Name" formControlName="name"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">Area Name & Pin Code</ion-label>
+          <ion-input placeholder="Area Name & Pin Code" formControlName="pincode"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">City/Town</ion-label>
+          <ion-input placeholder="City/Town" formControlName="city"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+        <ion-item fill="outline" >
+          <ion-label position="floating">State</ion-label>
+          <ion-input placeholder="State" formControlName="state"></ion-input>
+        </ion-item>
+      </div>
+      <div class="input">
+      <ion-item fill="outline" >
+        <ion-label position="floating">Email address(Optional)</ion-label>
+        <ion-input placeholder="Email address(Optional)" formControlName="email"></ion-input>
+      </ion-item>
+      </div>
+      <div class="term">
+        <ion-row>
+          <ion-checkbox ></ion-checkbox><h6 class="tbtn">I accept the<a> Terms & Conditions</a></h6>
+        </ion-row>
+      </div>
+      <div class="btn">
+        <ion-button class="long-btn" routerLink="/reciept">Done</ion-button>   
+      </div> 
+      </form> 
+    </div>
+    
+  </div>
+</ion-content>

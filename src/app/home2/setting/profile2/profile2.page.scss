@@ -1,0 +1,51 @@
+.flex{
+  // margin-top:2vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 5vw;
+} 
+ion-card-header{
+  margin-left:3vw;
+}
+.head{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.5vw;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #161616;
+  margin-left: 4vw;
+  text-align: center;
+}  
+
+.custom-input-field2{
+  width: 100%;
+  border: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
+  border-radius:2vw;
+  color: #000;
+  font-size:4vw;
+  height: 52px;
+  padding-left: 3vw;
+}
+.btn{
+  margin-top:8vh;
+}
+.row{
+  margin-top:5vh;
+}
+.logout{
+  color: red;
+  text-transform: initial;
+  font-size: 2vh;
+}
+.center{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.image{
+  width:30vw;
+  margin-top:2vw;
+}
